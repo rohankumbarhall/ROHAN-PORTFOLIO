@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1320, initial-scale=0.3, minimum-scale=0.1, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Rohan - Software Engineer & Systems Architect. Specializing in high-throughput distributed systems, low-latency microservices, and next-generation intelligent applications.">
+    <meta name="keywords" content="Rohan, Software Engineer, Systems Architect, Distributed Systems, Cloud Architecture, Full Stack, High Performance, Go, Rust, Python, React">
+    <meta name="author" content="Rohan">
+    <meta name="theme-color" content="#06070a">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rohan | Software Engineer & Systems Architect">
+    <meta property="og:description" content="Portfolio of Rohan - Dark glassmorphism & futuristic developer showcase featuring high-scale distributed systems and intelligent applications.">
+    <meta property="og:image" content="assets/images/rohan-hero.png">
+
+    <title>ROHAN // Software Engineer & Systems Architect</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Primary Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Subtle Background Canvas for 3D Cyber Particles & Constellations -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <!-- Ambient Glow Orbs -->
+    <div class="ambient-glow glow-cyan" aria-hidden="true"></div>
+    <div class="ambient-glow glow-violet" aria-hidden="true"></div>
+    <div class="ambient-glow glow-emerald" aria-hidden="true"></div>
+
+    <!-- Custom High-Tech Cursor -->
+    <div class="custom-cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+    <div class="custom-cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+    <!-- ================= FIXED LEFT VERTICAL NAVBAR ================= -->
+    <aside class="vertical-navbar-container" id="vertical-navbar" aria-label="Section Navigation">
+        <div class="vertical-navbar-glass">
+            <!-- Top Brand Monogram -->
+            <a href="#hero" class="vnav-brand" aria-label="Home" title="Rohan // Software Engineer">
+                <span class="vnav-brand-code">&lt;R/&gt;</span>
+            </a>
+
+            <div class="vnav-divider"></div>
+
+            <!-- Navigation Links -->
+            <nav class="vnav-nav" aria-label="Primary Vertical Navigation">
+                <ul class="vnav-list">
+                    <li class="vnav-item">
+                        <a href="#hero" class="vnav-link active" data-section="hero" aria-label="Home Section">
+                            <i class="fa-solid fa-house vnav-icon"></i>
+                            <span class="vnav-tooltip">Home</span>
+                        </a>
+                    </li>
+                    <li class="vnav-item">
+                        <a href="#about" class="vnav-link" data-section="about" aria-label="About Section">
+                            <i class="fa-solid fa-user vnav-icon"></i>
+                            <span class="vnav-tooltip">About</span>
+                        </a>
+                    </li>
+                    <li class="vnav-item">
+                        <a href="#skills" class="vnav-link" data-section="skills" aria-label="Skills Section">
+                            <i class="fa-solid fa-microchip vnav-icon"></i>
+                            <span class="vnav-tooltip">Skills</span>
+                        </a>
+                    </li>
+                    <li class="vnav-item">
+                        <a href="#timeline" class="vnav-link" data-section="timeline" aria-label="Timeline Section">
+                            <i class="fa-solid fa-clock-rotate-left vnav-icon"></i>
+                            <span class="vnav-tooltip">Timeline</span>
+                        </a>
+                    </li>
+                    <li class="vnav-item">
+                        <a href="#projects" class="vnav-link" data-section="projects" aria-label="Projects Section">
+                            <i class="fa-solid fa-layer-group vnav-icon"></i>
+                            <span class="vnav-tooltip">Projects</span>
+                        </a>
+                    </li>
+                    <li class="vnav-item">
+                        <a href="#testimonials" class="vnav-link" data-section="testimonials" aria-label="Testimonials Section">
+                            <i class="fa-solid fa-quote-left vnav-icon"></i>
+                            <span class="vnav-tooltip">Testimonials</span>
+                        </a>
+                    </li>
+                    <li class="vnav-item">
+                        <a href="#chat" class="vnav-link" data-section="chat" aria-label="Chat Section">
+                            <i class="fa-solid fa-comment-dots vnav-icon"></i>
+                            <span class="vnav-tooltip">Chat</span>
+                        </a>
+                    </li>
+                    <li class="vnav-item">
+                        <a href="#contact" class="vnav-link" data-section="contact" aria-label="Contact Section">
+                            <i class="fa-solid fa-paper-plane vnav-icon"></i>
+                            <span class="vnav-tooltip">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="vnav-divider"></div>
+
+            <!-- Bottom Live Indicator -->
+            <div class="vnav-footer" title="Systems Active: Open for Opportunities">
+                <span class="vnav-status-dot"></span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ================= HEADER / TOP BAR ================= -->
+    <header class="site-header" id="header">
+        <div class="header-inner container">
+            <!-- Brand Identity -->
+            <a href="#hero" class="brand-logo" id="brand-logo" aria-label="Rohan - Return to Top">
+                <span class="logo-symbol">&lt;/&gt;</span>
+                <span class="logo-text">ROHAN<span class="logo-accent">.DEV</span></span>
+                <span class="status-pulse" title="Systems Active: Open for Key Roles"></span>
+            </a>
+
+            <!-- Header Actions: SFX Toggle & Contact CTA -->
+            <div class="header-actions">
+                <button type="button" class="sfx-toggle-btn" id="sfx-toggle" aria-label="Toggle Audio Feedback" title="Toggle Audio Micro-interactions">
+                    <i class="fa-solid fa-volume-xmark" id="sfx-icon"></i>
+                    <span class="sfx-label">SFX: OFF</span>
+                </button>
+
+                <a href="#contact" class="btn btn-outline-cyan header-cta" id="header-cta-btn">
+                    <span>Initialize Sync</span>
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                </a>
+
+                <!-- Mobile Hamburger Button -->
+                <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+            <div class="mobile-drawer-content">
+                <div class="mobile-drawer-header">
+                    <span class="terminal-tag">// NAVIGATION_MODULE</span>
+                    <button type="button" class="drawer-close-btn" id="drawer-close" aria-label="Close Menu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <ul class="mobile-nav-list">
+                    <li><a href="#hero" class="mobile-nav-link"><i class="fa-solid fa-house text-cyan"></i> Home</a></li>
+                    <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user text-cyan"></i> About</a></li>
+                    <li><a href="#skills" class="mobile-nav-link"><i class="fa-solid fa-microchip text-cyan"></i> Skills</a></li>
+                    <li><a href="#timeline" class="mobile-nav-link"><i class="fa-solid fa-clock-rotate-left text-cyan"></i> Timeline</a></li>
+                    <li><a href="#projects" class="mobile-nav-link"><i class="fa-solid fa-layer-group text-cyan"></i> Projects</a></li>
+                    <li><a href="#testimonials" class="mobile-nav-link"><i class="fa-solid fa-quote-left text-cyan"></i> Testimonials</a></li>
+                    <li><a href="#chat" class="mobile-nav-link"><i class="fa-solid fa-comment-dots text-cyan"></i> Chat</a></li>
+                    <li><a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-paper-plane text-cyan"></i> Contact</a></li>
+                </ul>
+                <div class="mobile-drawer-footer">
+                    <a href="#contact" class="btn btn-primary-cyan w-full">Initiate Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- ================= HERO SECTION ================= -->
+        <section class="section hero-section" id="hero">
+            <!-- Background Watermark / Hollow Text Effect -->
+            <div class="hero-hollow-watermark" aria-hidden="true">
+                <span class="watermark-outline">ARCHITECT</span>
+                <span class="watermark-solid">ENGINEER</span>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-grid">
+                    <!-- Hero Content Column -->
+                    <div class="hero-content">
+                        <!-- Terminal Badge Pill -->
+                        <div class="terminal-badge">
+                            <span class="badge-dot"></span>
+                            <span class="badge-code">SYS_ONLINE // v3.4.0</span>
+                            <span class="badge-divider">|</span>
+                            <span class="badge-target">DISTRIBUTED_SCALE_ENGINEER</span>
+                        </div>
+
+                        <!-- Main Hero Headline -->
+                        <h1 class="hero-title">
+                            <span class="hero-greeting">HELLO WORLD, I'M</span>
+                            <span class="hero-name glow-text">ROHAN</span>
+                            <span class="hero-subtitle">
+                                <span class="subtitle-prefix">&gt; </span>
+                                <span class="typing-target" id="hero-typing-target">Software Engineer &amp; Systems Architect</span>
+                                <span class="typing-cursor">|</span>
+                            </span>
+                        </h1>
+
+                        <!-- Punchy Hero Description -->
+                        <p class="hero-description">
+                            Engineering resilient, high-concurrency microservices, sub-millisecond data pipelines, and intelligent cloud systems. Crafting digital architectures where <strong>rigorous computational performance</strong> converges with <strong>sleek, modern aesthetics</strong>.
+                        </p>
+
+                        <!-- Key Metrics Ribbon -->
+                        <div class="hero-stats-strip">
+                            <div class="hero-stat-item">
+                                <span class="stat-number" data-count="5">5+</span>
+                                <span class="stat-label">Years of Engineering</span>
+                            </div>
+                            <div class="stat-separator"></div>
+                            <div class="hero-stat-item">
+                                <span class="stat-number" data-count="99">99.99%</span>
+                                <span class="stat-label">Uptime Architecture</span>
+                            </div>
+                            <div class="stat-separator"></div>
+                            <div class="hero-stat-item">
+                                <span class="stat-number" data-count="12">12M+</span>
+                                <span class="stat-label">Processed Events/Day</span>
+                            </div>
+                        </div>
+
+                        <!-- Call-To-Action Button Suite -->
+                        <div class="hero-cta-group">
+                            <a href="#projects" class="btn btn-primary-cyan magnetic-item" id="hero-cta-projects">
+                                <span>Explore Systems</span>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-glass-panel magnetic-item" id="hero-cta-contact">
+                                <i class="fa-solid fa-terminal"></i>
+                                <span>Get in Touch</span>
+                            </a>
+                            <a href="#about" class="btn btn-ghost-subtle" id="hero-cta-bio">
+                                <span>Bio &amp; Dossier</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Visual Column: Creative Creative Photo Integration -->
+                    <div class="hero-visual-wrapper">
+                        <!-- Futuristic HUD Interactive Photo Card -->
+                        <div class="hero-portrait-card tilt-card" id="hero-portrait-card" data-tilt-max="12">
+                            <!-- Outer Sci-Fi Border Glow Elements -->
+                            <div class="portrait-hud-corner hud-tl"></div>
+                            <div class="portrait-hud-corner hud-tr"></div>
+                            <div class="portrait-hud-corner hud-bl"></div>
+                            <div class="portrait-hud-corner hud-br"></div>
+
+                            <!-- Diagnostic Floating Holographic Tag Top -->
+                            <div class="portrait-hud-tag top-tag">
+                                <span class="pulse-indicator"></span>
+                                <span>ID: ROHAN_SYS_01 // CORE_ACTIVE</span>
+                            </div>
+
+                            <!-- The Portrait Image Layer -->
+                            <div class="portrait-image-container">
+                                <img src="assets/images/rohan-hero.png" alt="Rohan - Software Engineer & Systems Architect" class="hero-portrait-img" id="hero-portrait-img" loading="eager">
+                                <div class="portrait-scanline-overlay"></div>
+                                <div class="portrait-vignette"></div>
+                            </div>
+
+                            <!-- Floating Glass HUD Badges -->
+                            <div class="floating-hud-badge badge-1" data-parallax="0.08">
+                                <i class="fa-solid fa-bolt-lightning text-cyan"></i>
+                                <div class="hud-badge-info">
+                                    <span class="hud-badge-title">LATENCY</span>
+                                    <span class="hud-badge-value">&lt; 12ms p99</span>
+                                </div>
+                            </div>
+
+                            <div class="floating-hud-badge badge-2" data-parallax="-0.06">
+                                <i class="fa-solid fa-shield-halved text-violet"></i>
+                                <div class="hud-badge-info">
+                                    <span class="hud-badge-title">SECURITY</span>
+                                    <span class="hud-badge-value">TRUST ME</span>
+                                </div>
+                            </div>
+
+                            <div class="floating-hud-badge badge-3" data-parallax="0.05">
+                                <i class="fa-solid fa-network-wired text-emerald"></i>
+                                <div class="hud-badge-info">
+                                    <span class="hud-badge-title">CONCURRENCY</span>
+                                    <span class="hud-badge-value">Distributed</span>
+                                </div>
+                            </div>
+
+                            <!-- Bottom Telemetry Bar -->
+                            <div class="portrait-hud-tag bottom-tag">
+                                <span class="mono-code">COORDINATES: 28.6139° N, 77.2090° E (INDIA)</span>
+                                <span class="mono-code text-cyan">SECURE_TUNNEL_ESTABLISHED // IST</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#about" class="hero-scroll-cue" aria-label="Scroll to About Section">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-text">SCROLL TO INITIALIZE</span>
+            </a>
+        </section>
+
+        <!-- ================= ABOUT ME SECTION ================= -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="tag-index">01</span>
+                        <span class="tag-line"></span>
+                        <span class="tag-title">SYSTEM DOSSIER</span>
+                    </div>
+                    <h2 class="section-heading">About <span class="gradient-text">Me &amp; Philosophy</span></h2>
+                    <p class="section-lead">A synthesis of low-level performance obsession and high-level architectural elegance.</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Left: Narrative Dossier Card -->
+                    <div class="glass-card about-card tilt-card" data-tilt-max="8">
+                        <div class="terminal-bar">
+                            <div class="terminal-dots">
+                                <span class="term-dot red"></span>
+                                <span class="term-dot yellow"></span>
+                                <span class="term-dot green"></span>
+                            </div>
+                            <span class="term-title">rohan@kernel:~ / dossier.md</span>
+                            <span class="term-lang">MARKDOWN</span>
+                        </div>
+                        <div class="terminal-body">
+                            <h3 class="about-story-title">The Engineering Mindset</h3>
+                            <p class="paragraph">
+                                I am an engineer driven by first-principles problem solving. My work spans the complete systems lifecycle: from architecting fault-tolerant distributed backends capable of serving millions of concurrent requests to crafting fluid, responsive interfaces that make complex data intuitive.
+                            </p>
+                            <p class="paragraph">
+                                With a foundation in computer science and relentless curiosity, I focus on the intersection of <strong>distributed systems</strong>, <strong>event-driven architectures</strong>, and <strong>intelligent computing</strong>. I believe that speed is a fundamental feature, clean code is a long-term compound asset, and thoughtful design is how software speaks to humans.
+                            </p>
+
+                            <!-- Core Pillars Grid -->
+                            <div class="pillars-grid">
+                                <div class="pillar-item">
+                                    <div class="pillar-icon"><i class="fa-solid fa-microchip"></i></div>
+                                    <div class="pillar-content">
+                                        <h4>High Concurrency</h4>
+                                        <p>Designing asynchronous, non-blocking pipelines that scale horizontally without bottlenecking.</p>
+                                    </div>
+                                </div>
+                                <div class="pillar-item">
+                                    <div class="pillar-icon"><i class="fa-solid fa-cubes"></i></div>
+                                    <div class="pillar-content">
+                                        <h4>Clean Architecture</h4>
+                                        <p>Decoupled domain layers, strict interfaces, and testable codebases built to endure evolution.</p>
+                                    </div>
+                                </div>
+                                <div class="pillar-item">
+                                    <div class="pillar-icon"><i class="fa-solid fa-lock"></i></div>
+                                    <div class="pillar-content">
+                                        <h4>Zero-Trust Security</h4>
+                                        <p>Defense-in-depth, encrypted transit, cryptographic identity, and rigorous audit telemetry.</p>
+                                    </div>
+                                </div>
+                                <div class="pillar-item">
+                                    <div class="pillar-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                                    <div class="pillar-content">
+                                        <h4>Polished UX</h4>
+                                        <p>Sub-millisecond feedback loops, smooth interactions, and intuitive human interfaces.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Developer Code IDE & Interactive Avatar Runner -->
+                    <div class="glass-card dev-runner-card tilt-card" data-tilt-max="6">
+                        <div class="terminal-bar">
+                            <div class="terminal-dots">
+                                <span class="term-dot red"></span>
+                                <span class="term-dot yellow"></span>
+                                <span class="term-dot green"></span>
+                            </div>
+                            <div class="ide-tab-header">
+                                <span class="ide-active-tab"><i class="fa-brands fa-js text-yellow"></i> EngineerProfile.ts</span>
+                            </div>
+                            <div class="ide-bar-actions">
+                                <button type="button" class="btn-copy-code" id="copy-ide-code-btn" aria-label="Copy TypeScript code" title="Copy Code">
+                                    <i class="fa-regular fa-clone"></i>
+                                    <span class="copy-label">Copy Code</span>
+                                </button>
+                                <span class="term-status"><i class="fa-solid fa-circle text-emerald"></i> Ready</span>
+                            </div>
+                        </div>
+
+                        <!-- Code Editor Area -->
+                        <div class="ide-code-container" id="ide-code-container">
+                            <pre class="ide-code-block" id="ide-code-content"><code><span class="code-keyword">interface</span> <span class="code-type">SoftwareEngineer</span> {
+  <span class="code-prop">name</span>: <span class="code-type">string</span>;
+  <span class="code-prop">role</span>: <span class="code-type">string</span>;
+  <span class="code-prop">education</span>: <span class="code-type">string</span>;
+  <span class="code-prop">cgpa</span>: <span class="code-type">number</span>;
+  <span class="code-prop">coreSkills</span>: <span class="code-type">string[]</span>;
+  <span class="code-prop">status</span>: <span class="code-type">string</span>;
+}
+
+<span class="code-keyword">const</span> <span class="code-var">rohan</span>: <span class="code-type">SoftwareEngineer</span> = {
+  <span class="code-prop">name</span>: <span class="code-str">"Rohan Basavaraj Kumbarahalla"</span>,
+  <span class="code-prop">role</span>: <span class="code-str">"Developer &amp; Software Engineer"</span>,
+  <span class="code-prop">education</span>: <span class="code-str">"B.E. in Computer Science @ VTU (2025–2029)"</span>,
+  <span class="code-prop">cgpa</span>: <span class="code-num">9.87</span>,
+  <span class="code-prop">coreSkills</span>: [<span class="code-str">"Java"</span>, <span class="code-str">"Python"</span>, <span class="code-str">"JavaScript"</span>, <span class="code-str">"CSS"</span>, <span class="code-str">"AWS"</span>, <span class="code-str">"DSA"</span>],
+  <span class="code-prop">status</span>: <span class="code-str">"Ready for Innovation &amp; High-Impact Engineering"</span>
+};
+
+<span class="code-comment">// Instantiate and inspect verified developer profile</span>
+<span class="code-func">console</span>.<span class="code-func">log</span>(<span class="code-var">rohan</span>.<span class="code-func">renderAvatarProfile</span>());</code></pre>
+                        </div>
+
+                        <!-- Run / Back Action Bar -->
+                        <div class="ide-action-bar">
+                            <button type="button" class="btn btn-primary-cyan btn-sm run-code-btn" id="run-profile-btn" aria-label="Run Code to inspect developer avatar">
+                                <i class="fa-solid fa-play"></i>
+                                <span class="btn-run-label">Run Code</span>
+                            </button>
+                            <span class="ide-shortcut-hint"><i class="fa-solid fa-terminal text-cyan"></i> Output Terminal</span>
+                        </div>
+
+                        <!-- Output Area (Displays the professional avatar and verified profile stats) -->
+                        <div class="ide-output-panel" id="ide-output-panel">
+                            <div class="output-placeholder" id="output-placeholder">
+                                <span class="mono-code text-muted">&gt; Click <span class="text-cyan">"Run Code"</span> to compile and inspect developer dossier...</span>
+                            </div>
+                            <div class="output-avatar-card output-avatar-card-vertical" id="output-avatar-card" style="display: none;">
+                                <!-- Prominent Big Avatar at Top -->
+                                <div class="output-avatar-wrapper output-avatar-wrapper-lg">
+                                    <img src="assets/images/rohan-avatar.jpeg" alt="Rohan Basavaraj Kumbarahalla" class="output-avatar-img">
+                                    <span class="avatar-live-badge"></span>
+                                </div>
+                                
+                                <!-- Information Displayed Below with Animated Layout -->
+                                <div class="output-details output-details-centered">
+                                    <div class="output-name-row">
+                                        <h4 class="output-name">Rohan Basavaraj Kumbarahalla</h4>
+                                        <span class="output-verified-badge"><i class="fa-solid fa-circle-check text-emerald"></i> Verified</span>
+                                    </div>
+                                    <p class="output-role-line"><span class="badge-accent">Developer &amp; Software Engineer</span></p>
+                                    <p class="output-sub">B.E. Computer Science &amp; Engineering // VTU (GPA: 9.87)</p>
+                                    
+                                    <div class="output-tags">
+                                        <span class="tech-pill">Java</span>
+                                        <span class="tech-pill">Python</span>
+                                        <span class="tech-pill">JavaScript</span>
+                                        <span class="tech-pill">CSS</span>
+                                        <span class="tech-pill">AWS</span>
+                                        <span class="tech-pill">DSA</span>
+                                    </div>
+                                    
+                                    <div class="output-status-line">
+                                        <span class="text-emerald">● Compilation Successful</span> — <span class="mono-code text-muted">0.02ms latency [IST Server]</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS SECTION ================= -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="tag-index">02</span>
+                        <span class="tag-line"></span>
+                        <span class="tag-title">TECHNICAL ARSENAL</span>
+                    </div>
+                    <h2 class="section-heading">Skills &amp; <span class="gradient-text">Competencies</span></h2>
+                    <p class="section-lead">A comprehensive toolkit honed across production battlegrounds, mission-critical systems, and open-source contributions.</p>
+                </div>
+
+                <!-- Skill Filter Tabs -->
+                <div class="skills-filter-nav" role="tablist" aria-label="Skill Category Tabs">
+                    <button type="button" class="skill-tab active" data-category="all" role="tab" aria-selected="true">
+                        <i class="fa-solid fa-border-all"></i> All Technologies
+                    </button>
+                    <button type="button" class="skill-tab" data-category="languages" role="tab" aria-selected="false">
+                        <i class="fa-solid fa-code"></i> Core Languages
+                    </button>
+                    <button type="button" class="skill-tab" data-category="cloud" role="tab" aria-selected="false">
+                        <i class="fa-solid fa-cloud"></i> Cloud Platform
+                    </button>
+                    <button type="button" class="skill-tab" data-category="web" role="tab" aria-selected="false">
+                        <i class="fa-solid fa-globe"></i> Web &amp; UI
+                    </button>
+                    <button type="button" class="skill-tab" data-category="cs" role="tab" aria-selected="false">
+                        <i class="fa-solid fa-diagram-project"></i> DSA &amp; Fundamentals
+                    </button>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid" id="skills-grid">
+                    <!-- 1. Java -->
+                    <div class="glass-card skill-card tilt-card" data-category="languages" data-level="95">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box"><i class="fa-brands fa-java text-yellow"></i></div>
+                            <span class="skill-badge-level">95%</span>
+                        </div>
+                        <h4 class="skill-name">Java</h4>
+                        <p class="skill-meta">Object-Oriented Programming, Multithreading, JVM Internals, and Robust Backend Services.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" style="width: 95%"></div>
+                        </div>
+                        <span class="skill-tag">Core Language</span>
+                    </div>
+
+                    <!-- 2. Python -->
+                    <div class="glass-card skill-card tilt-card" data-category="languages" data-level="94">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box"><i class="fa-brands fa-python text-cyan"></i></div>
+                            <span class="skill-badge-level">94%</span>
+                        </div>
+                        <h4 class="skill-name">Python</h4>
+                        <p class="skill-meta">FastAPI, Scripting, AI/ML Heuristic Integrations, Automation &amp; Data Pipelines.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" style="width: 94%"></div>
+                        </div>
+                        <span class="skill-tag">Core Language</span>
+                    </div>
+
+                    <!-- 3. JavaScript -->
+                    <div class="glass-card skill-card tilt-card" data-category="languages web" data-level="96">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box"><i class="fa-brands fa-js text-yellow"></i></div>
+                            <span class="skill-badge-level">96%</span>
+                        </div>
+                        <h4 class="skill-name">JavaScript</h4>
+                        <p class="skill-meta">Modern ES6+, Asynchronous Event Loops, DOM APIs, and Full-Stack Interactive Web Systems.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" style="width: 96%"></div>
+                        </div>
+                        <span class="skill-tag">Web &amp; Core</span>
+                    </div>
+
+                    <!-- 4. CSS / CSS3 -->
+                    <div class="glass-card skill-card tilt-card" data-category="web" data-level="95">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box"><i class="fa-brands fa-css3-alt text-cyan"></i></div>
+                            <span class="skill-badge-level">95%</span>
+                        </div>
+                        <h4 class="skill-name">CSS / CSS3</h4>
+                        <p class="skill-meta">Responsive Flex/Grid Layouts, Glassmorphism Design Tokens, Keyframes &amp; Smooth UI Animations.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" style="width: 95%"></div>
+                        </div>
+                        <span class="skill-tag">Styling &amp; UI</span>
+                    </div>
+
+                    <!-- 5. AWS Cloud Platform -->
+                    <div class="glass-card skill-card tilt-card" data-category="cloud" data-level="90">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box"><i class="fa-brands fa-aws text-yellow"></i></div>
+                            <span class="skill-badge-level">90%</span>
+                        </div>
+                        <h4 class="skill-name">AWS Cloud Platform</h4>
+                        <p class="skill-meta">EC2, S3, Lambda Serverless, IAM Security, CloudWatch Monitoring &amp; Scalable Cloud Architecture.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-tag">Cloud Infrastructure</span>
+                    </div>
+
+                    <!-- 6. DSA (Data Structures & Algorithms) -->
+                    <div class="glass-card skill-card tilt-card" data-category="cs" data-level="96">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box"><i class="fa-solid fa-network-wired text-violet"></i></div>
+                            <span class="skill-badge-level">96%</span>
+                        </div>
+                        <h4 class="skill-name">DSA (Data Structures &amp; Algorithms)</h4>
+                        <p class="skill-meta">Trees, Graphs, Dynamic Programming, Time &amp; Space Complexity Optimization, and Algorithmic Problem Solving.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" style="width: 96%"></div>
+                        </div>
+                        <span class="skill-tag">Core CS Fundamentals</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EXPERIENCE / TIMELINE SECTION ================= -->
+        <section class="section experience-section" id="timeline">
+            <span id="experience" class="section-anchor" aria-hidden="true"></span>
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="tag-index">03</span>
+                        <span class="tag-line"></span>
+                        <span class="tag-title">TRACK RECORD &amp; EXPERIENCE</span>
+                    </div>
+                    <h2 class="section-heading">Experience &amp; <span class="gradient-text">Timeline</span></h2>
+                    <p class="section-lead">A chronological journey of software engineering internships, distributed systems, and competitive hackathon engineering.</p>
+                </div>
+
+                <!-- Timeline Container -->
+                <div class="timeline-container">
+                    <div class="timeline-spine"></div>
+
+                    <!-- Role 1: Google Software Engineering Intern -->
+                    <div class="timeline-item" data-year="2025 - PRESENT">
+                        <div class="timeline-dot-wrapper">
+                            <div class="timeline-dot active"></div>
+                            <span class="timeline-pulse"></span>
+                        </div>
+                        <div class="timeline-content glass-card tilt-card" data-tilt-max="6">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="role-badge active">CURRENT INTERNSHIP</span>
+                                    <h3 class="role-title">Software Engineering Intern</h3>
+                                    <h4 class="company-name"><i class="fa-brands fa-google text-cyan"></i> Google // Cloud Systems &amp; Engineering Infrastructure</h4>
+                                </div>
+                                <div class="timeline-meta">
+                                    <span class="time-range"><i class="fa-regular fa-calendar"></i> 2025 — Present</span>
+                                    <span class="location-tag"><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka, India // Hybrid</span>
+                                </div>
+                            </div>
+
+                            <p class="timeline-summary">
+                                Contributing to scalable developer tooling, backend infrastructure services, and performance benchmarking for high-availability cloud platforms.
+                            </p>
+
+                            <ul class="achievement-bullets">
+                                <li><strong>Cloud Backend Optimization:</strong> Engineering high-throughput microservices with clean API contracts, reducing serialization overhead and optimizing memory locality.</li>
+                                <li><strong>Distributed Tooling:</strong> Collaborating on automated verification workflows, containerized service testbeds, and telemetry observability pipelines.</li>
+                                <li><strong>Code Excellence &amp; Reliability:</strong> Authoring rigorous unit and integration tests across mission-critical codebases to uphold zero-defect standards.</li>
+                            </ul>
+
+                            <div class="timeline-tech-stack">
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">Java</span>
+                                <span class="tech-pill">Google Cloud Platform</span>
+                                <span class="tech-pill">gRPC</span>
+                                <span class="tech-pill">Docker</span>
+                                <span class="tech-pill">Git</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Role 2: Amazon Software Development Engineer Intern -->
+                    <div class="timeline-item" data-year="2024 - 2025">
+                        <div class="timeline-dot-wrapper">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content glass-card tilt-card" data-tilt-max="6">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="role-badge">SOFTWARE INTERNSHIP</span>
+                                    <h3 class="role-title">Software Development Engineer Intern (SDE Intern)</h3>
+                                    <h4 class="company-name"><i class="fa-brands fa-amazon text-yellow"></i> Amazon // Distributed Services &amp; AWS Platform</h4>
+                                </div>
+                                <div class="timeline-meta">
+                                    <span class="time-range"><i class="fa-regular fa-calendar"></i> 2024 — 2025</span>
+                                    <span class="location-tag"><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka, India // Remote</span>
+                                </div>
+                            </div>
+
+                            <p class="timeline-summary">
+                                Designed and developed resilient event-driven cloud services, API endpoints, and database caching layers across the AWS cloud ecosystem.
+                            </p>
+
+                            <ul class="achievement-bullets">
+                                <li><strong>Serverless Architecture:</strong> Built automated asynchronous pipelines using AWS Lambda, SQS queues, and S3 storage triggers for rapid payload processing.</li>
+                                <li><strong>High-Performance REST APIs:</strong> Developed Java backend service endpoints with strict latency constraints and low-latency payload serialization.</li>
+                                <li><strong>Data Layer Optimization:</strong> Optimized database query indexing and Redis cache structures, improving read latencies under burst workloads.</li>
+                            </ul>
+
+                            <div class="timeline-tech-stack">
+                                <span class="tech-pill">Java</span>
+                                <span class="tech-pill">AWS Lambda</span>
+                                <span class="tech-pill">Amazon S3</span>
+                                <span class="tech-pill">DynamoDB</span>
+                                <span class="tech-pill">Redis</span>
+                                <span class="tech-pill">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Role 3: Competitive Hackathons & Innovation -->
+                    <div class="timeline-item" data-year="2023 - 2025">
+                        <div class="timeline-dot-wrapper">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content glass-card tilt-card" data-tilt-max="6">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="role-badge">HACKATHONS &amp; SPRINT BUILDS</span>
+                                    <h3 class="role-title">Competitive Hackathon Developer &amp; Innovation Lead</h3>
+                                    <h4 class="company-name"><i class="fa-solid fa-code text-violet"></i> Bangalore Hackathon 2025 &amp; Collegiate Circuits</h4>
+                                </div>
+                                <div class="timeline-meta">
+                                    <span class="time-range"><i class="fa-regular fa-calendar"></i> 2023 — 2025</span>
+                                    <span class="location-tag"><i class="fa-solid fa-location-dot"></i> Bangalore &amp; Chikkamagaluru, India</span>
+                                </div>
+                            </div>
+
+                            <p class="timeline-summary">
+                                Rapidly architected, prototyped, and shipped end-to-end full-stack software systems and IoT hardware integrations under intense 24-48 hour competitive hackathon sprints.
+                            </p>
+
+                            <ul class="achievement-bullets">
+                                <li><strong>Bangalore Hackathon 2025:</strong> Passed rigorous multi-tier evaluation rounds by developing an enterprise-grade high-concurrency web architecture.</li>
+                                <li><strong>Collegiate 2nd Prize Winner:</strong> Awarded 2nd Prize in college-level engineering hackathon for designing a real-time reactive software system.</li>
+                                <li><strong>Hardware-Cloud Prototyping:</strong> Built embedded IoT smart sensor telemetry and cyber threat verification engines within tight deadline constraints.</li>
+                            </ul>
+
+                            <div class="timeline-tech-stack">
+                                <span class="tech-pill">Java</span>
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">IoT Sensors</span>
+                                <span class="tech-pill">FastAPI</span>
+                                <span class="tech-pill">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS SECTION ================= -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="tag-index">04</span>
+                        <span class="tag-line"></span>
+                        <span class="tag-title">SYSTEM BLUEPRINTS</span>
+                    </div>
+                    <h2 class="section-heading">Featured <span class="gradient-text">Engineering Projects</span></h2>
+                    <p class="section-lead">Battle-tested architectures, open-source utilities, and high-performance computing systems.</p>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project-filters" role="tablist" aria-label="Project Category Tabs">
+                    <button type="button" class="project-filter-btn active" data-filter="all">All Systems</button>
+                    <button type="button" class="project-filter-btn" data-filter="iot">IoT &amp; Hardware</button>
+                    <button type="button" class="project-filter-btn" data-filter="ai">AI &amp; Threat Detection</button>
+                    <button type="button" class="project-filter-btn" data-filter="security">Cybersecurity &amp; Web</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1: IoT Based Smart Dustbin -->
+                    <article class="glass-card project-card tilt-card" data-category="iot" data-project-id="iot-dustbin">
+                        <div class="project-media-wrapper">
+                            <img src="assets/images/project-iot-dustbin.jpg" alt="IoT Based Smart Dustbin System" class="project-img" loading="lazy">
+                            <div class="project-overlay">
+                                <button type="button" class="btn btn-primary-cyan btn-sm project-modal-trigger" data-project="iot-dustbin">
+                                    <i class="fa-solid fa-expand"></i> Inspect Architecture
+                                </button>
+                            </div>
+                            <span class="project-status-tag"><i class="fa-solid fa-microchip text-cyan"></i> IOT &amp; SMART SENSORS</span>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-card-meta">
+                                <span class="project-category-badge">SMART IOT HARDWARE</span>
+                                <span class="project-stars"><i class="fa-solid fa-bell text-yellow"></i> 80% Full Threshold Alert</span>
+                            </div>
+                            <h3 class="project-card-title">IoT Based Smart Dustbin System</h3>
+                            <p class="project-card-desc">
+                                An automated waste monitoring device with ultrasonic sensors and embedded microcontroller that tracks capacity levels in real-time and transmits instant alert notifications to smartphones when capacity reaches 80%.
+                            </p>
+                            <div class="project-tech-pills">
+                                <span class="tech-pill">ESP32 / Arduino</span>
+                                <span class="tech-pill">C++</span>
+                                <span class="tech-pill">Ultrasonic Sensor</span>
+                                <span class="tech-pill">MQTT / WiFi</span>
+                                <span class="tech-pill">Push Notification API</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <button type="button" class="btn-link-action project-modal-trigger" data-project="iot-dustbin">
+                                    <span>Deep Dive</span> <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <div class="action-icons">
+                                    <a href="https://GitHub.com/rohankumbarhall" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#projects" class="icon-link project-modal-trigger" data-project="iot-dustbin" aria-label="Live Demo Telemetry"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Fraud Email Detector & Virus Debugger -->
+                    <article class="glass-card project-card tilt-card" data-category="ai" data-project-id="email-fraud">
+                        <div class="project-media-wrapper">
+                            <img src="assets/images/project-email-fraud.jpg" alt="Fraud Email Detector and Virus Debugger" class="project-img" loading="lazy">
+                            <div class="project-overlay">
+                                <button type="button" class="btn btn-primary-cyan btn-sm project-modal-trigger" data-project="email-fraud">
+                                    <i class="fa-solid fa-expand"></i> Inspect Architecture
+                                </button>
+                            </div>
+                            <span class="project-status-tag"><i class="fa-solid fa-shield-virus text-violet"></i> AI &amp; MALWARE SHIELD</span>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-card-meta">
+                                <span class="project-category-badge">AI &amp; CYBERSECURITY</span>
+                                <span class="project-stars"><i class="fa-solid fa-bug-slash text-emerald"></i> Threat Debugger</span>
+                            </div>
+                            <h3 class="project-card-title">Fraud Email Detector &amp; Virus Debugger</h3>
+                            <p class="project-card-desc">
+                                Intelligent email threat analyzer that processes raw headers, attachments, and lexical patterns to detect phishing attempts and fraudulent scams, providing instant security feedback and sandboxed malware debugging.
+                            </p>
+                            <div class="project-tech-pills">
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">NLP Heuristics</span>
+                                <span class="tech-pill">Sandbox Debugger</span>
+                                <span class="tech-pill">FastAPI</span>
+                                <span class="tech-pill">Virus Signature DB</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <button type="button" class="btn-link-action project-modal-trigger" data-project="email-fraud">
+                                    <span>Deep Dive</span> <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <div class="action-icons">
+                                    <a href="https://GitHub.com/rohankumbarhall" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#projects" class="icon-link project-modal-trigger" data-project="email-fraud" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: URL Phishing Scanner -->
+                    <article class="glass-card project-card tilt-card" data-category="security" data-project-id="url-phishing">
+                        <div class="project-media-wrapper">
+                            <img src="assets/images/project-url-phishing.jpg" alt="URL Phishing Verification &amp; Authenticity Engine" class="project-img" loading="lazy">
+                            <div class="project-overlay">
+                                <button type="button" class="btn btn-primary-cyan btn-sm project-modal-trigger" data-project="url-phishing">
+                                    <i class="fa-solid fa-expand"></i> Inspect Architecture
+                                </button>
+                            </div>
+                            <span class="project-status-tag"><i class="fa-solid fa-link-slash text-yellow"></i> ZERO-TRUST VERIFIER</span>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-card-meta">
+                                <span class="project-category-badge">WEB THREAT DEFENSE</span>
+                                <span class="project-stars"><i class="fa-solid fa-certificate text-cyan"></i> Real-Time SSL/DNS</span>
+                            </div>
+                            <h3 class="project-card-title">Phishing URL Scanner &amp; Authenticator</h3>
+                            <p class="project-card-desc">
+                                High-speed URL verification engine that inspects homograph attacks, typosquatting, certificate authenticity, IP reputation, and redirect chains to immediately verify whether a link is authentic or malicious.
+                            </p>
+                            <div class="project-tech-pills">
+                                <span class="tech-pill">JavaScript / Node.js</span>
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">DNS / WHOIS Lookup</span>
+                                <span class="tech-pill">SSL Inspection</span>
+                                <span class="tech-pill">REST APIs</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <button type="button" class="btn-link-action project-modal-trigger" data-project="url-phishing">
+                                    <span>Deep Dive</span> <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <div class="action-icons">
+                                    <a href="https://GitHub.com/rohankumbarhall" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#projects" class="icon-link project-modal-trigger" data-project="url-phishing" aria-label="Live Console"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EDUCATION SECTION ================= -->
+        <section class="section education-section" id="education">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="tag-index">05</span>
+                        <span class="tag-line"></span>
+                        <span class="tag-title">ACADEMIC FOUNDATION</span>
+                    </div>
+                    <h2 class="section-heading">Education &amp; <span class="gradient-text">Research</span></h2>
+                    <p class="section-lead">Theoretical rigor, computer systems foundations, and computational problem solving.</p>
+                </div>
+
+                <div class="education-grid education-symmetric-grid">
+                    <!-- 1. Bachelor of Engineering -->
+                    <div class="glass-card education-card tilt-card" data-tilt-max="8">
+                        <div class="edu-card-header">
+                            <div class="edu-icon"><i class="fa-solid fa-graduation-cap text-cyan"></i></div>
+                            <div class="edu-title-group">
+                                <span class="edu-degree-type">BACHELOR OF ENGINEERING (B.E.)</span>
+                                <h3 class="edu-degree">Computer Science &amp; Engineering</h3>
+                                <h4 class="edu-institution"><i class="fa-solid fa-building-columns"></i> VTU University</h4>
+                            </div>
+                            <div class="edu-period">
+                                <span class="badge-accent">2025 — 2029</span>
+                                <span class="edu-gpa text-emerald">GPA: 9.87 / 10.0</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-body">
+                            <h5 class="edu-section-title">Core Disciplines &amp; Focus Areas:</h5>
+                            <div class="coursework-tags">
+                                <span class="course-tag">Data Structures &amp; Algorithms</span>
+                                <span class="course-tag">Object-Oriented Programming (Java)</span>
+                                <span class="course-tag">Operating Systems &amp; Architecture</span>
+                                <span class="course-tag">Database Management Systems</span>
+                                <span class="course-tag">AWS Cloud &amp; Python Services</span>
+                            </div>
+
+                            <div class="edu-highlight-box">
+                                <div class="highlight-title"><i class="fa-solid fa-award text-yellow"></i> Academic Distinction:</div>
+                                <p class="highlight-desc">
+                                    Pursuing Bachelor of Engineering in Computer Science with top-tier academic standing of <strong>9.87 GPA</strong> under Visvesvaraya Technological University (VTU), mastering software engineering and computational algorithms.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. 12th Standard / Tungal Science College -->
+                    <div class="glass-card education-card tilt-card" data-tilt-max="8">
+                        <div class="edu-card-header">
+                            <div class="edu-icon"><i class="fa-solid fa-atom text-yellow"></i></div>
+                            <div class="edu-title-group">
+                                <span class="edu-degree-type">HIGHER SECONDARY / 12TH</span>
+                                <h3 class="edu-degree">Science (PCMB / Pre-University)</h3>
+                                <h4 class="edu-institution"><i class="fa-solid fa-school"></i> Tungal Science College, JKD</h4>
+                            </div>
+                            <div class="edu-period">
+                                <span class="badge-accent">Graduation 2025</span>
+                                <span class="edu-gpa text-emerald">GPA: 8.55 / 10.0</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-body">
+                            <h5 class="edu-section-title">Scientific &amp; Mathematical Rigor:</h5>
+                            <div class="coursework-tags">
+                                <span class="course-tag">Advanced Mathematics &amp; Calculus</span>
+                                <span class="course-tag">Physics &amp; Mechanics</span>
+                                <span class="course-tag">Chemistry &amp; Analytical Systems</span>
+                                <span class="course-tag">Biology &amp; Natural Science</span>
+                            </div>
+
+                            <div class="edu-highlight-box">
+                                <div class="highlight-title"><i class="fa-solid fa-star text-cyan"></i> Scholastic Milestone:</div>
+                                <p class="highlight-desc">
+                                    Completed 12th in Science (PCMB) at Tungal Science College, Jamkhandi (JKD) in 2025 with an exceptional <strong>8.55 GPA</strong>, building mathematical discipline and science aptitude.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. 10th Standard / Sai Sankalp School -->
+                    <div class="glass-card education-card tilt-card" data-tilt-max="8">
+                        <div class="edu-card-header">
+                            <div class="edu-icon"><i class="fa-solid fa-book-open text-violet"></i></div>
+                            <div class="edu-title-group">
+                                <span class="edu-degree-type">SECONDARY SCHOOL / 10TH</span>
+                                <h3 class="edu-degree">Secondary School Education</h3>
+                                <h4 class="edu-institution"><i class="fa-solid fa-school-flag"></i> Sai Sankalp School, MDK</h4>
+                            </div>
+                            <div class="edu-period">
+                                <span class="badge-accent">Completed 2022</span>
+                                <span class="edu-gpa text-emerald">GPA: 9.94 / 10.0</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-body">
+                            <h5 class="edu-section-title">Foundation &amp; Academic Honors:</h5>
+                            <div class="coursework-tags">
+                                <span class="course-tag">Mathematics &amp; Logic</span>
+                                <span class="course-tag">Science &amp; Scientific Method</span>
+                                <span class="course-tag">English &amp; Communication</span>
+                                <span class="course-tag">Leadership &amp; Scholastics</span>
+                            </div>
+
+                            <div class="edu-highlight-box">
+                                <div class="highlight-title"><i class="fa-solid fa-medal text-yellow"></i> Exceptional Honor:</div>
+                                <p class="highlight-desc">
+                                    Graduated 10th standard from Sai Sankalp School, Mudhol (MDK) in 2022 with a remarkable <strong>9.94 GPA</strong>, setting an elite scholastic benchmark.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ACHIEVEMENTS SECTION ================= -->
+        <section class="section achievements-section" id="achievements">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="tag-index">06</span>
+                        <span class="tag-line"></span>
+                        <span class="tag-title">RECOGNITION &amp; ACCOLADES</span>
+                    </div>
+                    <h2 class="section-heading">Honors &amp; <span class="gradient-text">Achievements</span></h2>
+                    <p class="section-lead">Accolades won across high-intensity hackathon battlegrounds, collegiate competitions, and industry training institutions.</p>
+                </div>
+
+                <div class="achievements-grid">
+                    <!-- Achievement 1: Bangalore Hackathon 2025 -->
+                    <div class="glass-card achievement-card tilt-card" data-tilt-max="10">
+                        <div class="achievement-icon-wrapper">
+                            <i class="fa-solid fa-trophy text-yellow"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <span class="achievement-badge">PREMIER TECH HUB COMPETITION</span>
+                            <h3 class="achievement-title">Bangalore Hackathon 2025 // Qualified &amp; Passed</h3>
+                            <p class="achievement-desc">
+                                Competed among top developer teams in India's premier tech capital, successfully passing rigorous multi-stage technical evaluations by designing high-speed, scalable software architecture and resilient problem-solving implementations under intense 48-hour hackathon judging.
+                            </p>
+                            <span class="achievement-meta"><i class="fa-solid fa-certificate text-cyan"></i> Evaluated &amp; Verified by Tech Industry Leaders</span>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 2: 2nd Prize in College Level Hackathon -->
+                    <div class="glass-card achievement-card tilt-card" data-tilt-max="10">
+                        <div class="achievement-icon-wrapper">
+                            <i class="fa-solid fa-medal text-cyan"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <span class="achievement-badge">2ND PRIZE WINNER</span>
+                            <h3 class="achievement-title">College-Level Engineering Hackathon</h3>
+                            <p class="achievement-desc">
+                                Clinched <strong>2nd Prize</strong> out of extensive competing engineering squads for engineering an innovative, interactive software prototype with optimized algorithmic time complexity, modular code structuring, and seamless reactive user experience.
+                            </p>
+                            <span class="achievement-meta"><i class="fa-solid fa-award text-yellow"></i> Collegiate Hackathon Honor &amp; Distinction</span>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 3: Internship Appreciation at Tap Academy -->
+                    <div class="glass-card achievement-card tilt-card" data-tilt-max="10">
+                        <div class="achievement-icon-wrapper">
+                            <i class="fa-solid fa-award text-violet"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <span class="achievement-badge">EXCELLENCE COMMENDATION</span>
+                            <h3 class="achievement-title">Internship Appreciation // Tap Academy</h3>
+                            <p class="achievement-desc">
+                                Awarded prestigious official commendation and certificate of appreciation for outstanding analytical problem-solving acumen, software engineering discipline, and exemplary performance across Java full-stack, data structures, and enterprise web paradigms.
+                            </p>
+                            <span class="achievement-meta"><i class="fa-solid fa-star text-emerald"></i> Commended for Engineering Rigor &amp; Technical Execution</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TESTIMONIALS SECTION ================= -->
+        <section class="section testimonials-section" id="testimonials">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="tag-index">06</span>
+                        <span class="tag-line"></span>
+                        <span class="tag-title">ENDORSEMENTS</span>
+                    </div>
+                    <h2 class="section-heading">Peer &amp; Leadership <span class="gradient-text">Testimonials</span></h2>
+                    <p class="section-lead">Verified feedback from Engineering Directors, Principal Architects, and Founders.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1: Rishikesh Kumar -->
+                    <div class="glass-card testimonial-card tilt-card" data-tilt-max="8">
+                        <div class="testimonial-header">
+                            <div class="testimonial-author-avatar">
+                                <span class="avatar-initials">RK</span>
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4 class="author-name">Rishikesh Kumar</h4>
+                                <span class="author-role">VP of Engineering</span>
+                            </div>
+                            <div class="rating-stars" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star text-cyan"></i>
+                                <i class="fa-solid fa-star text-cyan"></i>
+                                <i class="fa-solid fa-star text-cyan"></i>
+                                <i class="fa-solid fa-star text-cyan"></i>
+                                <i class="fa-solid fa-star text-cyan"></i>
+                            </div>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Rohan has a rare talent for cutting through complex software engineering problems. His analytical rigor, clean code practices, and grasp of core data structures make him an outstanding developer and engineering collaborator."
+                        </blockquote>
+                        <div class="testimonial-tags">
+                            <span class="tech-pill">Software Engineering</span>
+                            <span class="tech-pill">Java &amp; Python</span>
+                            <span class="tech-pill">Clean Architecture</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2: Charan B R -->
+                    <div class="glass-card testimonial-card tilt-card" data-tilt-max="8">
+                        <div class="testimonial-header">
+                            <div class="testimonial-author-avatar">
+                                <span class="avatar-initials">CB</span>
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4 class="author-name">Charan B R</h4>
+                                <span class="author-role">Principal System Architect</span>
+                            </div>
+                            <div class="rating-stars" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star text-cyan"></i>
+                                <i class="fa-solid fa-star text-cyan"></i>
+                                <i class="fa-solid fa-star text-cyan"></i>
+                                <i class="fa-solid fa-star text-cyan"></i>
+                                <i class="fa-solid fa-star text-cyan"></i>
+                            </div>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "One of the sharpest developers I have collaborated with. Rohan understands algorithms, memory discipline, and system foundations from first principles with phenomenal problem-solving intuition."
+                        </blockquote>
+                        <div class="testimonial-tags">
+                            <span class="tech-pill">DSA Prowess</span>
+                            <span class="tech-pill">Cloud Systems</span>
+                            <span class="tech-pill">AWS Platform</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3: Kushal D -->
+                    <div class="glass-card testimonial-card tilt-card" data-tilt-max="8">
+                        <div class="testimonial-header">
+                            <div class="testimonial-author-avatar">
+                                <span class="avatar-initials">KD</span>
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4 class="author-name">Kushal D</h4>
+                                <span class="author-role">Co-Founder &amp; CTO</span>
+                            </div>
+                            <div class="rating-stars" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star text-cyan"></i>
+                                <i class="fa-solid fa-star text-cyan"></i>
+                                <i class="fa-solid fa-star text-cyan"></i>
+                                <i class="fa-solid fa-star text-cyan"></i>
+                                <i class="fa-solid fa-star text-cyan"></i>
+                            </div>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Rohan pairs deep technical problem-solving with an uncommon eye for clean, modern software design. His work on IoT telemetry and security verification prototypes demonstrates high-impact engineering ability."
+                        </blockquote>
+                        <div class="testimonial-tags">
+                            <span class="tech-pill">IoT Systems</span>
+                            <span class="tech-pill">Cybersecurity</span>
+                            <span class="tech-pill">Web Architecture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CHAT SECTION ================= -->
+        <section class="section chat-section" id="chat">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="tag-index">07</span>
+                        <span class="tag-line"></span>
+                        <span class="tag-title">AI CONCIERGE</span>
+                    </div>
+                    <h2 class="section-heading">Developer <span class="gradient-text">Chat Assistant</span></h2>
+                    <p class="section-lead">Query Rohan's real-time AI knowledge node regarding engineering stack, availability, or architectural philosophies.</p>
+                </div>
+
+                <div class="chat-container-card glass-card">
+                    <div class="terminal-bar">
+                        <div class="terminal-dots">
+                            <span class="term-dot red"></span>
+                            <span class="term-dot yellow"></span>
+                            <span class="term-dot green"></span>
+                        </div>
+                        <span class="term-title">rohan-assistant-v2 // knowledge-mesh: active</span>
+                        <span class="term-status"><i class="fa-solid fa-bolt text-cyan"></i> 8ms LATENCY</span>
+                    </div>
+
+                    <div class="chat-body-wrapper">
+                        <!-- Quick Prompt Suggestion Pills -->
+                        <div class="chat-prompt-chips" role="group" aria-label="Quick Prompt Suggestions">
+                            <button type="button" class="chat-chip" data-prompt="What is your core tech stack?">
+                                <i class="fa-solid fa-code text-cyan"></i> Core Tech Stack
+                            </button>
+                            <button type="button" class="chat-chip" data-prompt="Tell me about your internship experience">
+                                <i class="fa-solid fa-briefcase text-cyan"></i> Google &amp; Amazon Internships
+                            </button>
+                            <button type="button" class="chat-chip" data-prompt="Tell me about your hackathon achievements">
+                                <i class="fa-solid fa-trophy text-cyan"></i> Bangalore Hackathon 2025
+                            </button>
+                            <button type="button" class="chat-chip" data-prompt="What are your featured projects?">
+                                <i class="fa-solid fa-microchip text-cyan"></i> IoT &amp; Security Projects
+                            </button>
+                        </div>
+
+                        <!-- Chat Messages Stream -->
+                        <div class="chat-messages-stream" id="chat-messages-stream" aria-live="polite">
+                            <!-- Assistant Welcome Message -->
+                            <div class="chat-message assistant-msg">
+                                <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
+                                <div class="msg-content">
+                                    <div class="msg-header">
+                                        <span class="msg-author">Rohan AI Concierge</span>
+                                        <span class="msg-time">Just now</span>
+                                    </div>
+                                    <p class="msg-text">
+                                        Hello! I'm Rohan's automated system concierge. Rohan is a developer as well as a software engineer and Computer Science &amp; Engineering student at VTU (GPA 9.87). You can ask me about his internships at Google &amp; Amazon, hackathons, projects, or verified contact channels. How can I assist you today?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chat Input Box -->
+                        <form class="chat-input-form" id="chat-input-form">
+                            <div class="chat-input-container">
+                                <input type="text" id="chat-user-input" class="chat-input-field" placeholder="Ask a question about Rohan's internships, hackathons, or skills..." autocomplete="off">
+                                <button type="submit" class="btn btn-primary-cyan btn-sm chat-send-btn" id="chat-send-btn" aria-label="Send Message">
+                                    <span>Transmit</span>
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT SECTION ================= -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="tag-index">07</span>
+                        <span class="tag-line"></span>
+                        <span class="tag-title">COMMUNICATIONS NODE</span>
+                    </div>
+                    <h2 class="section-heading">Initiate <span class="gradient-text">Transmission</span></h2>
+                    <p class="section-lead">Have an engineering project, high-performance challenge, or software collaboration? Let's connect.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Direct Channels Card -->
+                    <div class="glass-card contact-info-card tilt-card" data-tilt-max="8">
+                        <div class="terminal-bar">
+                            <div class="terminal-dots">
+                                <span class="term-dot red"></span>
+                                <span class="term-dot yellow"></span>
+                                <span class="term-dot green"></span>
+                            </div>
+                            <span class="term-title">connection-endpoints.cfg</span>
+                            <span class="term-status"><i class="fa-solid fa-circle text-emerald"></i> LISTENING</span>
+                        </div>
+
+                        <div class="contact-info-body">
+                            <h3 class="contact-subheading">Direct Communication Lines</h3>
+                            <p class="contact-desc">
+                                I am currently open to software engineering opportunities, developer internships, and ambitious projects. Drop a line via direct email or any network below.
+                            </p>
+
+                            <!-- Direct Email Channel with 1-Click Copy -->
+                            <div class="channel-item">
+                                <div class="channel-icon"><i class="fa-solid fa-envelope text-cyan"></i></div>
+                                <div class="channel-details">
+                                    <span class="channel-label">PRIMARY DIRECT EMAIL</span>
+                                    <span class="channel-value" id="email-address">rohankumbarhall@gmail.com</span>
+                                </div>
+                                <button type="button" class="btn-copy-email" id="copy-email-btn" aria-label="Copy Email Address" title="Copy to Clipboard">
+                                    <i class="fa-regular fa-clone"></i>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+
+                            <!-- Location & Timezone -->
+                            <div class="channel-item">
+                                <div class="channel-icon"><i class="fa-solid fa-location-crosshairs text-violet"></i></div>
+                                <div class="channel-details">
+                                    <span class="channel-label">BASE COORDINATES</span>
+                                    <span class="channel-value">Chikkamagaluru, Karnataka, India // UTC+5:30 (IST-Delhi)</span>
+                                </div>
+                            </div>
+
+                            <!-- PGP Fingerprint -->
+                            <div class="channel-item">
+                                <div class="channel-icon"><i class="fa-solid fa-key text-emerald"></i></div>
+                                <div class="channel-details">
+                                    <span class="channel-label">PGP PUBLIC KEY FINGERPRINT</span>
+                                    <span class="channel-value mono-code">8F32 B741 09DE 214C A065</span>
+                                </div>
+                            </div>
+
+                            <!-- Social Network Matrix -->
+                            <div class="social-networks-wrapper">
+                                <span class="social-label">// VERIFIED TRANSMISSION ENDPOINTS</span>
+                                <div class="social-links-grid">
+                                    <a href="https://GitHub.com/rohankumbarhall" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                                        <i class="fa-brands fa-github text-cyan"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <a href="https://x.com/kumbarhall90204" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X (Twitter) Profile">
+                                        <i class="fa-brands fa-x-twitter text-cyan"></i>
+                                        <span>X.com</span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/rohan-basavaraj-kumbarahalla-6a253240b?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                                        <i class="fa-brands fa-linkedin-in text-cyan"></i>
+                                        <span>LinkedIn</span>
+                                    </a>
+                                    <a href="https://www.instagram.com/rohan_b_g?stkn=djc0amlqOHFudjlj" target="_blank" rel="noopener noreferrer" class="social-btn instagram-btn" aria-label="Instagram Profile">
+                                        <i class="fa-brands fa-instagram text-cyan"></i>
+                                        <span>Instagram</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Glassmorphic Contact Terminal Form -->
+                    <div class="glass-card contact-form-card">
+                        <div class="terminal-bar">
+                            <div class="terminal-dots">
+                                <span class="term-dot red"></span>
+                                <span class="term-dot yellow"></span>
+                                <span class="term-dot green"></span>
+                            </div>
+                            <span class="term-title">send_transmission.sh</span>
+                            <span class="term-lang">ENCRYPTED_TLS</span>
+                        </div>
+
+                        <form class="transmission-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name" class="form-label">
+                                        <span class="text-cyan">&gt;</span> YOUR_IDENTITY / NAME:
+                                    </label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-user input-icon"></i>
+                                        <input type="text" id="contact-name" name="name" required class="form-input" placeholder="e.g. Alex Mercer" autocomplete="name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contact-email" class="form-label">
+                                        <span class="text-cyan">&gt;</span> RETURN_ENDPOINT / EMAIL:
+                                    </label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-at input-icon"></i>
+                                        <input type="email" id="contact-email" name="email" required class="form-input" placeholder="e.g. alex@enterprise.io" autocomplete="email">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject" class="form-label">
+                                    <span class="text-cyan">&gt;</span> TRANSMISSION_SUBJECT:
+                                </label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-tag input-icon"></i>
+                                    <input type="text" id="contact-subject" name="subject" required class="form-input" placeholder="e.g. Senior Distributed Systems Role / Tech Architecture">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message" class="form-label">
+                                    <span class="text-cyan">&gt;</span> PAYLOAD_BODY / MESSAGE:
+                                </label>
+                                <div class="input-wrapper textarea-wrapper">
+                                    <textarea id="contact-message" name="message" rows="5" required class="form-textarea" placeholder="Detail your project scope, requirements, or opportunity..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary-cyan w-full" id="submit-transmission-btn">
+                                    <span class="btn-text">Transmit Message</span>
+                                    <i class="fa-solid fa-paper-plane btn-icon"></i>
+                                </button>
+                            </div>
+
+                            <div class="form-status-feed" id="form-status-feed" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <footer class="site-footer" id="footer">
+        <div class="container footer-container">
+            <div class="footer-top-row">
+                <!-- Brand Dossier -->
+                <div class="footer-brand">
+                    <a href="#hero" class="brand-logo footer-logo">
+                        <span class="logo-symbol">&lt;/&gt;</span>
+                        <span class="logo-text">ROHAN<span class="logo-accent">.DEV</span></span>
+                    </a>
+                    <p class="footer-tagline">
+                        Architecting resilient computing systems, distributed data engines, and clean modern software.
+                    </p>
+                    <div class="footer-status-indicator">
+                        <span class="pulse-ring-emerald"></span>
+                        <span class="status-text">NODE STATUS: 100% OPERATIONAL // ALL SYSTEMS NOMINAL</span>
+                    </div>
+                </div>
+
+                <!-- Footer Quick Nav -->
+                <div class="footer-nav-col">
+                    <h5 class="footer-heading">// SYSTEM MAP</h5>
+                    <ul class="footer-links">
+                        <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About Dossier</a></li>
+                        <li><a href="#skills"><i class="fa-solid fa-angle-right"></i> Technical Arsenal</a></li>
+                        <li><a href="#experience"><i class="fa-solid fa-angle-right"></i> Experience Timeline</a></li>
+                        <li><a href="#projects"><i class="fa-solid fa-angle-right"></i> System Blueprints</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h5 class="footer-heading">// CREDENTIALS</h5>
+                    <ul class="footer-links">
+                        <li><a href="#education"><i class="fa-solid fa-angle-right"></i> Education &amp; Research</a></li>
+                        <li><a href="#achievements"><i class="fa-solid fa-angle-right"></i> Awards &amp; Honors</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Transmission Node</a></li>
+                        <li><a href="#header-cta-btn"><i class="fa-solid fa-angle-right"></i> Direct Sync</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Telemetry -->
+                <div class="footer-telemetry-col">
+                    <h5 class="footer-heading">// RUNTIME TELEMETRY</h5>
+                    <div class="telemetry-box">
+                        <div class="telemetry-row">
+                            <span class="telemetry-key">UPTIME:</span>
+                            <span class="telemetry-val text-emerald">99.998%</span>
+                        </div>
+                        <div class="telemetry-row">
+                            <span class="telemetry-key">LOCAL TIME:</span>
+                            <span class="telemetry-val" id="live-time-display">--:--:-- UTC</span>
+                        </div>
+                        <div class="telemetry-row">
+                            <span class="telemetry-key">PROTOCOL:</span>
+                            <span class="telemetry-val text-cyan">HTTP/3.0 + TLS 1.3</span>
+                        </div>
+                        <div class="telemetry-row">
+                            <span class="telemetry-key">FRAMEWORK:</span>
+                            <span class="telemetry-val">Pure Vanilla Semantic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-row">
+                <div class="footer-copyright">
+                    <span>© <span id="current-year">2026</span> Rohan. Designed &amp; Engineered with Precision.</span>
+                </div>
+                <div class="footer-back-to-top">
+                    <a href="#hero" class="btn-back-to-top" id="back-to-top-btn" aria-label="Back to Top">
+                        <span>BACK TO TOP</span>
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= PROJECT DEEP-DIVE MODAL ================= -->
+    <div class="project-modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="glass-card project-modal-dialog" id="project-modal-dialog">
+            <div class="terminal-bar modal-header-bar">
+                <div class="terminal-dots">
+                    <span class="term-dot red"></span>
+                    <span class="term-dot yellow"></span>
+                    <span class="term-dot green"></span>
+                </div>
+                <span class="term-title" id="modal-terminal-title">system_architecture_spec.json</span>
+                <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="project-modal-content" id="project-modal-content">
+                <!-- Dynamically Populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= FLOATING TOAST NOTIFICATION CONTAINER ================= -->
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+    <!-- Scripts -->
+    <!-- Three.js via CDN for 3D Cyber Particles & Constellations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Primary Application JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
